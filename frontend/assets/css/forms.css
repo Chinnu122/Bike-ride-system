@@ -1,0 +1,10 @@
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Prediction</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/prediction-ui.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Ride</h2>
+        <form id="prediction-form">
+            <input type="text" id="pickup" placeholder="Pickup Location" required>
+            <input type="text" id="drop" placeholder="Drop Location" required>
+            <input type="time" id="time" required>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../assets/js/price_prediction.js"></script>
+</body>
+</html>
