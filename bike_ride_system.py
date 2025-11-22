@@ -2,6 +2,7 @@
 Bike Ride System - A simple bike rental management system
 """
 
+import time
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 
@@ -131,13 +132,11 @@ class BikeRideSystem:
         active_rides = sum(1 for ride in self.rides.values() if ride.end_time is None)
         completed_rides = sum(1 for ride in self.rides.values() if ride.end_time is not None)
         
-        return f"""
-Bike Ride System Status:
+        return f"""Bike Ride System Status:
 - Total Bikes: {total_bikes}
 - Available Bikes: {available_bikes}
 - Active Rides: {active_rides}
-- Completed Rides: {completed_rides}
-        """
+- Completed Rides: {completed_rides}"""
 
 
 def main():
@@ -171,7 +170,6 @@ def main():
     
     # End a ride
     print("Ending rides...")
-    import time
     time.sleep(1)  # Simulate some ride time
     cost1 = system.end_ride(ride1)
     print(f"Total cost for ride {ride1}: ${cost1:.2f}")
